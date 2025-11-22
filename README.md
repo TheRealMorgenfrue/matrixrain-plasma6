@@ -1,11 +1,18 @@
 # Matrix-style Wallpaper for KDE Plasma 6
 
-Provides a Matrix-esque "code rainfall" background wallpaper for Plasma 6, with some fun custommizations.
+Provides a Matrix-esque "code rainfall" background wallpaper for Plasma 6, with some fun customizations.
 
 ![screenshot.png](screenshot.png)
 
 ## Features
 
+- Choose between different character types:
+  - ASCII
+  - Binary
+  - Braille
+  - Katakana
+  - Picto
+  - Runic
 - Change font size
 - Choose between single color, or multi-color with pre-defined palettes
 - Customize drop speed
@@ -14,9 +21,7 @@ Provides a Matrix-esque "code rainfall" background wallpaper for Plasma 6, with 
 
 ## Installation
 
-installation requires `kpackagetool6` which can be found on the `kpackage`
-package on arch based distros, `kpackagetool6` on Suse based distros, and
-`kf6-kpackage` on debian based distros.
+installation requires `kpackagetool6` which can be found in the `kpackage` package on arch based distros, `kpackagetool6` on Suse based distros, and `kf6-kpackage` on debian based distros.
 
 ```bash
 git clone https://github.com/obsidianreq/matrixrain-plasma6.git

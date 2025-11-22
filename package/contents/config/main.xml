@@ -1,5 +1,6 @@
 <Config>
   <Group name="General">
+    <Entry key="charType" type="Int"><Default>0</Default></Entry>
     <Entry key="fontSize" type="Int"><Default>16</Default><Range min="8" max="48"/></Entry>
     <Entry key="speed" type="Int"><Default>50</Default><Range min="1" max="100"/></Entry>
     <Entry key="colorMode" type="Int"><Default>0</Default></Entry>

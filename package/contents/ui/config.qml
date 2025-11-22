@@ -7,6 +7,7 @@ import org.kde.kirigami.layouts 2.0 as KirigamiLayouts
 KirigamiLayouts.FormLayout {
     anchors.fill: parent
 
+    property alias cfg_charType: charCombo.currentIndex
     property alias cfg_fontSize: fontSpin.value
     property alias cfg_speed: speedSpin.value
     property alias cfg_colorMode: modeCombo.currentIndex
@@ -15,6 +16,19 @@ KirigamiLayouts.FormLayout {
     property alias cfg_jitter: jitterSpin.value
     property alias cfg_glitchChance: glitchSpin.value
 
+    QC.ComboBox {
+        id: charCombo; model:[
+            qsTr("ASCII"), 
+            qsTr("Binary"), 
+            qsTr("Braille"), 
+            qsTr("Katakana"), 
+            qsTr("Picto"), 
+            qsTr("Runic")
+        ]
+        currentIndex: configuration.charType
+        onCurrentIndexChanged: configuration.charType = currentIndex
+        KirigamiLayouts.FormData.label: qsTr("charType")
+    }
     QC.SpinBox {
         id: fontSpin; from:8; to:48; stepSize:1; value:configuration.fontSize
         onValueChanged: configuration.fontSize = value
