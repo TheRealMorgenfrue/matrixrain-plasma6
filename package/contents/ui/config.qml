@@ -27,7 +27,7 @@ KirigamiLayouts.FormLayout {
         ]
         currentIndex: configuration.charType
         onCurrentIndexChanged: configuration.charType = currentIndex
-        KirigamiLayouts.FormData.label: qsTr("charType")
+        KirigamiLayouts.FormData.label: qsTr("Character Type")
     }
     QC.SpinBox {
         id: fontSpin; from:8; to:48; stepSize:1; value:configuration.fontSize

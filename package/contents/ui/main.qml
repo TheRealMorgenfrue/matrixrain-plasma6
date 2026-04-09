@@ -15,7 +15,7 @@ WallpaperItem {
     property var palettes: [["#00ff00", "#ff00ff", "#00ffff", "#ff0000", "#ffff00", "#0000ff"], ["#ff0066", "#33ff99", "#ffcc00", "#6600ff", "#00ccff", "#ff3300"], ["#ff00ff", "#00ffcc", "#cc00ff", "#ffcc33", "#33ccff", "#ccff00"]]
 
     anchors.fill: parent
-    oncharTypeChanged: canvas.requestPaint()
+    onCharTypeChanged: canvas.requestPaint()
     onFontSizeChanged: {
         canvas.initDrops();
         canvas.requestPaint();
