@@ -24,7 +24,7 @@ Provides a Matrix-esque "code rainfall" background wallpaper for Plasma 6, with 
 installation requires `kpackagetool6` which can be found in the `kpackage` package on arch based distros, `kpackagetool6` on Suse based distros, and `kf6-kpackage` on debian based distros.
 
 ```bash
-git clone https://github.com/obsidianreq/matrixrain-plasma6.git
+git clone https://github.com/TheRealMorgenfrue/matrixrain-plasma6.git
 cd matrixrain-plasma6
 kpackagetool6 --type Plasma/Wallpaper --install package/
 kquitapp6 plasmashell && kstart plasmashell
